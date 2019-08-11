@@ -1,0 +1,110 @@
+POST http://localhost:8090/user/test?name=白晓文
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-08T070240.200.json
+
+###
+
+POST http://localhost:8090/user/test?name=白晓文
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-08T070201.200.json
+
+###
+
+POST http://localhost:8090/user/getotp?telphone='123566'
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-08T125751.200.json
+
+###
+
+POST http://localhost:8090/user/getotp?telphone='123566'
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-08T125656.200.json
+
+###
+
+POST http://localhost:8090/user/getotp?telphone='123566'
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-08T125434.415.json
+
+###
+
+POST http://localhost:8090/user/getotp?telphone=“123566”
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-08T125417.415.json
+
+###
+
+POST http://localhost:8090/user/getotp?telphone=123566
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-08T125306.415.json
+
+###
+
+POST http://localhost:8090/user/getotp?telphone=123566
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-08T124951.415.json
+
+###
+
+POST http://localhost:8090/user/getotp?telphone=123566
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-08T124825.404.json
+
+###
+
+GET http://localhost:8090/user/get?id=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-08T124703.200.json
+
+###
+
+GET http://localhost:8090/user/get?id=1
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8090/user/get?id=1
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/user/get?id=1
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/get?id=1
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/get
+Accept: */*
+Cache-Control: no-cache
+
+###
+

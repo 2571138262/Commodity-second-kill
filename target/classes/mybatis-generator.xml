@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <context id="MysqlContext" targetRuntime="MyBatis3">
+        
+        
+        <!--数据库连接地址账号和密码-->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/miaosha"
+                        userId="root"
+                        password="root">
+        </jdbcConnection>
+
+
+        <!--对于生成的DataObject类所在的包-->
+        <javaModelGenerator targetPackage="com.miaoshaproject.dataobject" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!--对于生成的mapper映射文件所在的目录-->
+        <sqlMapGenerator targetPackage="mapping" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!-- 生成Dao类存放的位置 -->
+        <!-- 客户端代码，生成易于使用的针对Model对象和XML配置文件的代码
+             type="ANNOTATEDMAPPER",生成的Java Model 和基于注解的Mapper对象
+             type="MIXEDMAPPER",生成基于注解的Java Model 和 相应的Mapper对象
+             type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.miaoshaproject.dao" targetProject="src/main/java"/>
+
+        <!-- 生成对应表及类名 -->
+        <table schema="miaosha" tableName="promo" domainObjectName="PromoDO" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>
+        <!--<table schema="miaosha" tableName="item_stock" domainObjectName="ItemStockDO" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="holiday_management" domainObjectName="HolidayManagement" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="sys_m_menu" domainObjectName="MysMMenu" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="sys_m_operate" domainObjectName="SysMOperate" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="sys_m_resp" domainObjectName="SysMResp" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="sys_m_resp_operate_rel" domainObjectName="SysMRespOperateRel" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="sys_m_role" domainObjectName="SysMRole" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="sys_m_role_menu_rel" domainObjectName="SysMRoleMenuRel" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="sys_m_tenant" domainObjectName="SysMTenant" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="sys_m_user_resp_rel" domainObjectName="SysMUserRespRel" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="sys_m_user_role_rel" domainObjectName="sysMUserRoleRel" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="system_notice" domainObjectName="SystemNotice" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="system_notice_info" domainObjectName="SystemNoticeInfo" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="time_management" domainObjectName="TimeManagement" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="work_order" domainObjectName="WorkOrder" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="work_order_attachment" domainObjectName="WorkOrderAttachment" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="work_order_detail" domainObjectName="WorkOrderDetail" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="work_order_flow" domainObjectName="WorkOrderFlow" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="work_order_supervise" domainObjectName="WorkOrderSupervise" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="work_order_supervise_history" domainObjectName="WorkOrderSuperviseHistory" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        <!--<table schema="miaosha" tableName="work_order_template_management" domainObjectName="WorkOrderTemplateManagement" enableCountByExample="fales" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" selectByExampleQueryId="false"></table>-->
+        
+        
+        
+    </context>
+</generatorConfiguration>

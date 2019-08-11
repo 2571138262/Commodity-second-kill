@@ -1,0 +1,10 @@
+{
+  "statue": "success",
+  "data": {
+    "id": 1,
+    "name": "白晓文",
+    "gender": 1,
+    "age": 22,
+    "telphone": "18532304911"
+  }
+}
